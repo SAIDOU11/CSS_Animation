@@ -4,17 +4,62 @@ body {
   padding: 0;
 }
 
-body {
-  font-size: 1rem;
+img {
+  width: 100%;
 }
 
-.heading {
-  cursor: pointer;
-  color: darkblue;
-  transition: all 0.5s ease;
+.title-wrapper {
+  margin: 0;
+  background: #bdceff;
+  border-bottom: 3px solid #005aad;
+  padding: 0.625em;
 }
 
-.heading:hover {
+.title {
+  margin: 0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-align: center;
+  transition: color 1s ease-out;
+}
+
+.title:hover {
+  color: #1f93ff;
+}
+
+.menu {
+  margin: 0;
+  width: 100%;
+  padding: 0.3em;
+  background: #bdceff;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  border-bottom: 3px solid #005aad;
+}
+
+.menu-item {
+  height: 3em;
+  align-self: center;
+  margin: 0.3em;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: #000;
+  transition: all 1s ease-out;
+}
+
+.menu-link:hover {
   font-size: 2.5rem;
-  color: red;
+  color: #1f93ff;
 }
