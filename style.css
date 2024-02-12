@@ -1,6 +1,20 @@
-/* 
-1. Transitions
-2. Animations 
-3. Effects & Transform
-4. Tips & Tricks 
-*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+}
+
+.heading {
+  cursor: pointer;
+  color: darkblue;
+  transition: all 0.5s ease;
+}
+
+.heading:hover {
+  font-size: 2.5rem;
+  color: red;
+}
