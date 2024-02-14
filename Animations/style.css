@@ -3,7 +3,7 @@
   height: 100px;
   background: blue;
   border: 1px solid #000;
-  animation: supersize 2s ease-out 4 alternate both;
+  animation: supersize 2s ease-out 0s 4 alternate both;
 }
 
 @keyframes supersize {
