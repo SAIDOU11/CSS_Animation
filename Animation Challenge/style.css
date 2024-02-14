@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.img-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("image/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  font-family: "Sen", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  color: #fff;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}

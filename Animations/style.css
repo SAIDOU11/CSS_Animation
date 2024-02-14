@@ -1,30 +1,25 @@
 .box {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   background: blue;
   border: 1px solid #000;
-
-  /* animation-name: grow;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-iteration-count: 4;
-  animation-timing-function: ease-in;
-  animation-direction: alternate;
-  animation-fill-mode: both; */
-
-  animation: grow 1s ease infinite alternate;
-  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: supersize 2s ease-out 4 alternate both;
 }
 
-@keyframes grow {
-  from {
-    width: 200px;
-    height: 200px;
-    background: blue;
-  }
-  to {
+@keyframes supersize {
+  0% {
     width: 100px;
     height: 100px;
+    background: blue;
+  }
+  50% {
+    width: 200px;
+    height: 200px;
     background: red;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    background: green;
   }
 }
