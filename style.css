@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%, -50%);
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: #ff0000;
+  border: 2px solid #000;
+  /*  */
+}
