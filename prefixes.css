@@ -10,6 +10,10 @@ body {
 
 .hover-text {
   transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .hover-text:hover {
@@ -23,7 +27,11 @@ body {
   height: 50px;
   background: #ff0000;
   border: 1px solid #000;
-  animation: size-down ease-out 0.5s infinite alternate box;
+  animation: size-down ease-out 0.5s infinite alternate both;
+  -webkit-animation: size-down ease-out 0.5s infinite alternate both;
+  -ms-animation: size-down ease-out 0.5s infinite alternate both;
+  -moz-animation: size-down ease-out 0.5s infinite alternate both;
+  -o-animation: size-down ease-out 0.5s infinite alternate both;
 }
 
 @keyframes size-down {
