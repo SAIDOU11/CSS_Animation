@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --box-unit: 150px;
+  --second-color: #6874ac;
+}
+
+.hover-text {
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition-timing-function: cubic-bezier(1, 0, 1, 1);
+}
+
+.hover-text:hover {
+  color: var(--second-color);
+  font-size: 1.25rem;
+}
+
+.box {
+  position: fixed;
+  width: var(--box-unit);
+  height: var(--box-unit);
+  background: #ff0000;
+  border: 1px solid #000;
+  animation: size-down cubic-bezier(0.62, 0.15, 0.4, 0.9) 0.5s infinite
+    alternate both;
+}
+
+@keyframes size-down {
+  100% {
+    transform: scale(0.3, 0.3);
+    background: var(--second-color);
+  }
+}
